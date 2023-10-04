@@ -1,10 +1,18 @@
+import Header from "../../assets/HeaderBagzy.png";
+import { Box } from "@mui/material";
 
-
-const Fav = () => {
+const HeaderFav = () => {
   return (
-    <h1>Fav</h1>
+    <Box
+    height="10vh"
+    sx={{
+      backgroundImage: `url(${Header})`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+    }}
+  />
   )
   
 }
 
-export default Fav
+export default HeaderFav

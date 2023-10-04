@@ -1,8 +1,19 @@
 
-const Contact = () => {
+import Header from "../../assets/HeaderBagzy.png";
+import { Box } from "@mui/material";
+
+
+const HeaderContact = () => {
   return (
-    <div>Contact</div>
+    <Box
+    height="10vh"
+    sx={{
+      backgroundImage: `url(${Header})`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+    }}
+    />
   )
 }
 
-export default Contact
+export default HeaderContact

@@ -1,8 +1,18 @@
+import { Box } from "@mui/material";
+import Header from "../../assets/HeaderBagzy.png";
 
-const Checkout = () => {
+const HeaderCheckout = () => {
   return (
-    <div>Checkout</div>
+<Box
+height="10vh"
+sx={{
+  backgroundImage: `url(${Header})`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+}}
+/>
+  
   )
 }
 
-export default Checkout
+export default HeaderCheckout

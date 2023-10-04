@@ -1,6 +1,8 @@
 import Header from "../../assets/HeaderBagzy.png";
 import { Box } from "@mui/material";
-const Home = () => {
+
+
+const HeaderHome= () => {
   return ( 
     <Box
     height="10vh"
@@ -10,7 +12,10 @@ const Home = () => {
       backgroundSize: "cover",
     }}
   />
+  
+
   )
 }
 
-export default Home
+  
+export default HeaderHome
