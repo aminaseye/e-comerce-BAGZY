@@ -6,6 +6,7 @@ import  Register from "../pages/auth/Register";
 import  Checkout from "../pages/auth/Checkout";
 import  Contact from "../pages/auth/Contact";
 import  Fav from "../pages/auth/Fav";
+import OnlyProduct from '../pages/OnlyProduct';
 
 
 
@@ -21,6 +22,7 @@ const Router = () => {
             <Route path= "/checkout" element = {<Checkout />} /> 
             <Route path= "/contact" element = {<Contact />} />
             <Route path= "/fav" element = {<Fav />} />
+            <Route path="/view/product/:id" element={<OnlyProduct/>} />
             <Route path= "/*" element = {<Navigate to = "/"/>}/>
         </Routes>
     </BrowserRouter>
