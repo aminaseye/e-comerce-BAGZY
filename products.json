@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "nameProduct" : "minibag",
+        "price" : 25,
+        "color" : "cafe"
+    },
+    {
+        "id" : 2,
+        "nameProduct" : "gloss",
+        "price" : 15,
+        "color" : "orange"
+    },
+    {
+        "id"  : 3,
+        "nameProduct" : "bandolera",
+        "price" : 30,
+        "color" : "red"
+    },
+    {
+        "id" : 4,
+        "nameProducto" : "hermes",
+        "price" : 100,
+        "color" : "violet"
+    },
+    {
+        "id" : 5,
+        "nameProduct" : "lacey",
+        "price" : 50,
+        "color" : "salmon"
+    }
+]
