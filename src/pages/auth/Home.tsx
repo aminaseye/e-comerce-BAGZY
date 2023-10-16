@@ -11,7 +11,7 @@ const Home = () => {
   
    
   return (
-    <Box height="150vh" display="flex" flexDirection="column">
+    <Box height="90" display="flex" flexDirection="column">
       <Box
         height="90px"
         sx={{
