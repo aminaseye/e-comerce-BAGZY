@@ -2,6 +2,7 @@ import { Box, Button } from "@mui/material";
 import Minibolso from "../../assets/minibolso/MINIBOLSO1.png";
 import Granate from "../../assets/bolso_correa/GRANATE1.png";
 import Coach from "../../assets/bolso_coach/COACHBEIGE1.png";
+import Correa from "../../assets/accesorios/CORREA1.png";
 import { Icon } from "@iconify/react";
 import { useNavigate } from "react-router-dom";
 const Products = () => {
@@ -27,7 +28,7 @@ const Products = () => {
         <Button
           variant="contained"
           sx={{
-            marginRight: "20px",
+            marginRight: "15px",
             fontWeight: "bold",
             fontSize: "13px",
             height: "40px",
@@ -42,7 +43,7 @@ const Products = () => {
         <Button
           variant="contained"
           sx={{
-            marginLeft: "15px",
+            marginLeft: "10px",
             fontWeight: "bold",
             fontSize: "13px",
             height: "40px",
@@ -74,15 +75,16 @@ const Products = () => {
             backgroundSize: "70%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center top ",
+            textAlign:"center"
           }}
         >
           <hr
             color="grey"
             style={{
               position: "relative",
-              top: "160px",
-              width: "155px",
-              marginLeft: "27px",
+              top: "150px",
+              width: "200px",
+            
             }}
           />
 
@@ -98,9 +100,9 @@ const Products = () => {
           <Icon
             icon="mdi:cards-heart-outline"
             style={{
-              marginLeft: "25px",
+              marginLeft: "5px",
               position: "relative",
-              top: "175px",
+             
             }}
           />
           <p
@@ -114,14 +116,19 @@ const Products = () => {
           >
             {data[0].nameProduct}
           </p>
+          
           <Box
+       
             border="1px solid black"
             height="15px"
             width="15px"
             bgcolor="#8B4513"
-            display="flex"
-            flexDirection="column"
+          
+            
           ></Box>
+          <Box  marginTop="150px" marginLeft="50px">
+              <button >View Product</button>
+            </Box>
         </Box>
 
         <Box
@@ -144,15 +151,55 @@ const Products = () => {
             display="flex"
             gap="5px"
             padding="10px"
-            onClick={() => navigate(`/view/product/${data[1].id}`)}
+            onClick={() => navigate(`/view/product/${data[2].id}`)}
           >
-            <Box border="1px solid red" component="img" width="50%">
-              {/* <img src={imagePath} alt="Mi Foto" /> */}
+            <Box  component="img" width="50%" 
+              sx={{ backgroundImage: `url(${Correa})`,
+               backgroundSize: "100%",
+               
+               backgroundRepeat: "no-repeat",
+               backgroundPosition: "center",}}>
+         
             </Box>
-            <Box border="1px solid green" width="50%"></Box>
+           
+            <Box  width="50%" >
+            <Icon
+            icon="mdi:cards-heart-outline"
+            style={{
+              marginLeft: "5px",
+              position: "relative",
+             
+            }}
+          />
+              <Box display ="flex" flexDirection="row" gap="5px"
+              >
+                <Box border="1px solid black" height="14px" width="14px" bgcolor="#DEB887">
+
+                </Box>
+                <Box border="1px solid black" height="14px" width="14px" bgcolor="black">
+
+                </Box>
+              </Box>
+              <p
+            style={{
+              position: "relative",
+             marginTop:"25PX",
+              fontWeight: "bold",
+              fontSize: "10px",
+              alignItems: "center",
+            }}
+          >
+            {data[2].nameProduct}</p>
+            <Box>
+              <button >View Product</button>
+            </Box>
+            </Box>
           </Box>
-          <Box height="50%" display="flex" gap="5px" padding="10px" onClick={() => navigate(`/view/product/${data[2].id}`)}>
-            <Box border="1px solid green" component="img" width="50%"></Box>
+          <Box height="50%" display="flex" gap="5px" padding="10px" onClick={() => navigate(`/view/product/${data[3].id}`)}>
+            <Box border="1px solid green" component="img" width="50%">
+              
+            </Box>
+            
             <Box border="1px solid red" width="50%"></Box>
           </Box>
         </Box>
@@ -161,10 +208,10 @@ const Products = () => {
           width="100%"
           height="100%"
           bgcolor="#D9D9D9"
-          onClick={() => navigate(`/view/product/${data[3].id}`)}
+          onClick={() => navigate(`/view/product/${data[1].id}`)}
           sx={{
             backgroundImage: `url(${Granate})`,
-            backgroundSize: "60%",
+            backgroundSize: "78%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center top ",
           }}
@@ -173,31 +220,32 @@ const Products = () => {
             color="grey"
             style={{
               position: "relative",
-              top: "320px",
-              width: "155px",
-              marginLeft: "27px",
+              top: "270px",
+              width: "200px",
+          
             }}
           />
           <Icon
             icon="mdi:cards-heart-outline"
             style={{
-              marginLeft: "25px",
+              marginLeft: "5px",
               position: "relative",
-              top: "335px",
+             
             }}
           />
           <p
             style={{
               position: "relative",
-              top: "310px",
+              top: "280px",
               fontWeight: "bold",
               fontSize: "10px",
-              alignItems: "center",
+             textAlign:"center"
             }}
           >
-            GLOSS VINTAGE
+           {data[1].nameProduct}
           </p>
-          <Box display="flex" justifyContent="end">
+          
+          <Box display="flex" flexDirection="column" gap="5px">
             <Box
               border="1px solid black"
               height="15px"
@@ -216,6 +264,9 @@ const Products = () => {
               width="15px"
               bgcolor="#008000"
             ></Box>
+            <Box  marginTop="250px" marginLeft="50px">
+              <button >View Product</button>
+            </Box>
           </Box>
         </Box>
 
@@ -243,6 +294,10 @@ const Products = () => {
           onClick={() => navigate(`/view/product/${data[4].id}`)}
           sx={{
             backgroundImage: `url(${Coach})`,
+            backgroundSize: "78%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition:"center right"
+
           }}
         >
           <Box
@@ -253,7 +308,14 @@ const Products = () => {
             padding="25px"
 
           >
-            <p>LACEY</p>
+            <p style={{
+              position: "relative",
+             
+              fontWeight: "bold",
+              fontSize: "10px",
+              alignItems: "center",
+            }}
+            >{data[4].nameProduct}</p>
             <Icon
               icon="mdi:cards-heart-outline"
               style={{
@@ -279,6 +341,9 @@ const Products = () => {
               width="15px"
               bgcolor="#008000"
             ></Box>
+            <Box width="30px">
+              <button >View Product</button>
+            </Box>
           </Box>
         </Box>
       </Box>
