@@ -9,30 +9,31 @@ const App = () => {
         nameProduct : "MINIBAG CLAUDE DE LONA",
         price : 25,
         color : "cafe",
-        img : '/assets/products/minibolso/MINIBOLSO1.png'
-
+        img : '/assets/products/minibolso/MINIBOLSO1.png',
+     
     },
     {
         id : 2,
-        nameProduct : "gloss",
+        nameProduct : "GLOSS VINTAGE",
         price : 15,
-        color : "orange"
+        color : "brown",
+        img: ""
     },
     {
         id : 3,
-        nameProduct : "bandolera",
+        nameProduct : "BANDOLERA ANAGRAM",
         price : 30,
         color : "red"
     },
     {
         id : 4,
-        nameProduct : "hermes",
+        nameProduct : "ORAN NANOs",
         price : 100,
         color : "violet"
     },
     {
         id : 5,
-        nameProduct : "lacey",
+        nameProduct : "Lacey",
         price : 50,
         color : "salmon",
         img : '/assets/products/bolso_coach/COACHBEIGE1.png'
